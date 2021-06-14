@@ -1,0 +1,28 @@
+# Install the Rest Client VS extension to execute the below APIs.
+
+GET http://localhost:3000/product
+content-type: application/json
+
+###
+POST http://localhost:3000/product HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Washing Machine",
+    "price": "$ 899.50",
+    "description": "Cleans all the dirt efficiently."
+}
+
+###
+DELETE  http://localhost:3000/product/485d1fe4-2e56-4ba5-9853-e12ba2cde346
+content-type: application/json
+
+###
+PUT  http://localhost:3000/product/45b9c17f-4d14-4b02-a9bb-f74e45ae88df HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Television",
+    "price": "$ 599.50",
+    "description": "OLED Television with smart TV features."
+}
